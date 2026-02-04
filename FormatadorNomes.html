@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatador de Nomes - Agenda</title>
+    
+</head>
+<body>
+    <h1>Formatador de Nomes para Agenda</h1>
+    <p>Digite um nome com formatação irregular para ver como ficará na agenda:</p>
+    
+    <div class="input-area">
+        <input type="text" id="nomeInput" placeholder="Ex:  joão silva  ">
+        <button onclick="formatarNome()">Formatar Nome</button>
+    </div>
+    
+    <div id="resultado" class="result">
+        O nome formatado aparecerá aqui...
+    </div>
+    
+    <div class="examples">
+        <p><strong>Exemplos de testes:</strong></p>
+        <ul>
+            <li>"  maria souza  " → "MARIA SOUZA"</li>
+            <li>"joão da silva" → "JOÃO DA SILVA"</li>
+            <li>"  CARLOS  " → "CARLOS"</li>
+        </ul>
+    </div>
+
+    <script src="FormatadorNomes.JS"></script>
+</body>
+</html>
