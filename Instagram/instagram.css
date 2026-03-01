@@ -75,5 +75,44 @@
 .storys {
     display: flex;
     flex-direction: row;
-    border-image: 50%;
+    
+
+}
+
+.img-storys {
+    border-radius: 50%;
+    width: 3rem;
+    margin: 0.8rem;
+
+
+  /* Define duas camadas de fundo */
+background-image:
+    linear-gradient(white, white),   /* Camada 1: fundo branco sólido */
+    linear-gradient(45deg, #9c005b, #cc0526, rgb(235,231,4), rgb(181,0,253));
+    /* Camada 2: gradient colorido (que vai virar a "borda") */
+
+/* Define de onde cada background começa a ser desenhado */
+background-origin: border-box;
+/* Faz o background considerar a área incluindo a borda */
+
+/* Controla onde cada camada pode aparecer */
+background-clip: content-box, border-box;
+
+/*
+Primeira camada (white, white) → fica só na área do conteúdo
+Segunda camada (gradient) → ocupa até a borda
+Isso cria o efeito de borda colorida
+*/
+
+/* Faz a imagem manter proporção sem distorcer */
+object-fit: cover;
+
+/* Cria a espessura da borda */
+border: 0.2rem solid transparent;
+/*
+A borda é transparente, mas ocupa espaço.
+Como o gradient está no border-box,
+ele aparece nesse espaço transparente.
+*/
+
 }
