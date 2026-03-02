@@ -210,3 +210,13 @@ ele aparece nesse espaço transparente.
     margin-top: 1rem;
 
 }
+
+.video {
+    width: 30rem;
+    border-radius: 3rem;
+    margin-left: 25%;
+    margin-top: 1rem;
+    object-fit: cover;
+    height: 35rem;
+    
+}
