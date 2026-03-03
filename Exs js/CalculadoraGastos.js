@@ -6,12 +6,12 @@ const lazer = parseFloat(prompt("Digite o quanto você investe na sua paz:"));
 totalDespesa = aluguel + alimentacao + lazer; 
 saldo = salario - totalDespesa;
 
-if (saldo >= 0) {
+if (saldo > 0) {
     alert(`Saldo positivo bigode, seu saldo é de ${saldo}`)
 }
 
-else if (saldo = 0) {
-    alert(`boa chachorro, sobreviveu mais um mês!, seu saldo é de  ${saldo}`)
+else if (saldo === 0) {
+    alert(`boa cachorro, sobreviveu mais um mês!, seu saldo é de  ${saldo}`)
 }
 
 else {
