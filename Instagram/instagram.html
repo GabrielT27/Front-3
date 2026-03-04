@@ -4,7 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="instagram.css">
+    
+    
     <title>Instagram</title>
 </head>
 
@@ -53,7 +57,7 @@
         <span class="text">Reels</span>
     </div>
 
-    <div class="icon" style="margin-top: 7rem;">
+    <div class="icon" style="margin-top: 10rem;">
         <img src="icons8-cardápio-100.png" alt="" class="icon-img">
         <span class="text">Menu</span>
     </div>
@@ -160,13 +164,47 @@
     </div>
     </div>
 
+
+    <!-- Carrossel -->
+    <div class="post">
+      <div class="publi">
+        <img src="download.png" alt="" class="perfil-post">
+        <span class="name-publi">Brasil</span>
+      </div>
+      <span class="loc-publi">Granja Comary</span>
+      <div id="carouselExampleRide" class="carousel slide carousel-dark post-img" data-bs-ride="true">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="gorillaz.jpg" class="d-block w-100" alt="..." style="border-radius: 2rem;">
+          </div>
+
+          <div class="carousel-item">
+            <img src="Corinthians.png" class="d-block w-100" alt="..."  style="border-radius: 2rem;">
+          </div>
+          <div class="carousel-item">
+            <img src="papicris.jpg" class="d-block w-100" alt="..." style="border-radius: 2rem;">
+          </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
     
-    
-</div>
+
+  
 </div>
 
 
-    <script src="instagram.js"></script>
-</body>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script></body>
 
 </html>
