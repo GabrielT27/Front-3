@@ -78,6 +78,8 @@ body {
     align-items: center;        
     padding-top: 2rem;
     
+
+    
 }
 
 .story {
@@ -104,6 +106,8 @@ body {
     border-radius: 50%;
     width: 4.5rem;             
     margin: 0.5rem 0.5rem 0.2rem 0.1rem;
+    transition: 0.5s;
+    cursor: pointer;
 
 
   /* Define duas camadas de fundo */
@@ -135,6 +139,13 @@ A borda é transparente, mas ocupa espaço.
 Como o gradient está no border-box,
 ele aparece nesse espaço transparente.
 */
+
+}
+
+.img-storys:hover{
+    transition: 0.3s;
+    transform: scale(1.2);
+
 
 }
 
