@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    background-color: rgba(22, 22, 22, 0.89);
+
+
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    
+}
+
+.sidebar {
+    height: 100vh;              
+    width: 7rem;                
+    background-color: rgb(20, 20, 20);
+    transition: 0.5s;           
+    overflow: hidden;           /* Esconde o texto quando a sidebar estiver fechada */
+
+    display: flex;              /* Ativa o Flexbox */
+    flex-direction: column;     /* Organiza os itens um embaixo do outro */
+    padding-top: 20px;          /* Espaço no topo */
+    position: fixed;
+}
+
+
+.sidebar:hover  {
+    width: 22vh;              
+}
+
+.icon a {
+    text-decoration: none; /* Remove o sublinhado azul */
+    color: white;          
+    display: flex;         
+    align-items: center;   
+}
+
+/* Opcional: Garante que o sublinhado não volte no hover */
+.icon a:hover {
+    text-decoration: none;
+}
+
+
+
+.icon {
+    display: flex;              /* Coloca ícone e texto lado a lado */
+    align-items: center;        /* Alinha verticalmente no centro */
+    gap: 1rem;                  /* Espaço entre ícone e texto */
+    padding: 1rem;              /* Espaçamento interno */
+    cursor: pointer;            
+    color: white;          
+    margin-left: 1rem;     
+}
+
+
+.icon:hover {
+    background-color: rgba(255,255,255,0.1); 
+    border-radius: 1.5rem;
+
+    
+}
+
+
+.icon-img {
+    width: 2rem;                /* Largura do ícone */
+    height: 2rem;               /* Altura do ícone */
+}
+
+
+/* Texto começa invisível */
+.text {
+    opacity: 0;
+    visibility: hidden; /* Garante que o elemento não seja "clicável" ou desenhe linhas enquanto invisível */
+    white-space: nowrap;
+    transition: 0.3s;
+    font-family: Arial, sans-serif;
+    margin-left: 1rem; 
+}
+
+.sidebar:hover .text {
+    opacity: 1;
+    visibility: visible;
+}
