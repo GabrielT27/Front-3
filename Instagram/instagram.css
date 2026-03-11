@@ -6,6 +6,7 @@ body {
 
 }
 
+
 .layout {
     display: flex;
     
@@ -25,9 +26,23 @@ body {
 }
 
 
-.sidebar:hover {
+.sidebar:hover  {
     width: 20vh;              
 }
+
+
+.icon a {
+    text-decoration: none; /* Remove o sublinhado azul */
+    color: white;          
+    display: flex;         
+    align-items: center;   
+}
+
+/* Opcional: Garante que o sublinhado não volte no hover */
+.icon a:hover {
+    text-decoration: none;
+}
+
 
 
 .icon {
@@ -50,25 +65,24 @@ body {
 
 
 .icon-img {
-    width: 1.5rem;                /* Largura do ícone */
-    height: 1.5rem;               /* Altura do ícone */
+    width: 2rem;                /* Largura do ícone */
+    height: 2rem;               /* Altura do ícone */
 }
+
 
 /* Texto começa invisível */
 .text {
-    opacity: 0;                 
-    white-space: nowrap;        /* Impede quebra de linha */
-    transition: 0.3s;           
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 0.8rem;
+    opacity: 0;
+    visibility: hidden; /* Garante que o elemento não seja "clicável" ou desenhe linhas enquanto invisível */
+    white-space: nowrap;
+    transition: 0.3s;
+    font-family: Arial, sans-serif;
+    margin-left: 1rem; 
 }
 
-
 .sidebar:hover .text {
-    opacity: 1;                 /* Torna o texto visível */
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 0.8rem;
-
+    opacity: 1;
+    visibility: visible;
 }
 
 .page {
@@ -104,7 +118,7 @@ body {
 
 .img-storys {
     border-radius: 50%;
-    width: 4.5rem;             
+    width: 5.2rem;             
     margin: 0.5rem 0.5rem 0.2rem 0.1rem;
     transition: 0.5s;
     cursor: pointer;
@@ -251,3 +265,18 @@ ele aparece nesse espaço transparente.
     flex-direction: column;
     
 }
+
+
+.curtidass {
+    width: 2rem;
+    margin-left: 10%;
+    margin-top: 1rem;
+}
+
+
+.curtidinhass {
+    display: flex;
+    align-items: center;
+
+}
+
