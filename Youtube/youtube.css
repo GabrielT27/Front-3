@@ -1,0 +1,31 @@
+body {
+    margin: auto;
+    background-color: rgb(22, 22, 22);
+
+
+}
+
+nav {
+    background-color: chartreuse;
+    padding: 2rem;
+
+}
+
+.sidebar  {
+  
+    height: 100vh;              
+    width: 7rem;                
+    background-color: rgb(236, 0, 0);
+    transition: 0.5s;           
+    overflow: hidden;           /* Esconde o texto quando a sidebar estiver fechada */
+
+    display: flex;              /* Ativa o Flexbox */
+    flex-direction: column;     /* Organiza os itens um embaixo do outro */
+    padding-top: 2rem;          /* Espaço no topo */
+    position: fixed;
+}
+
+
+.sidebar:hover  {
+    width: 22vh;              
+}
