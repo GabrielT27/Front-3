@@ -1,6 +1,7 @@
 body {
     margin: auto;
     background-color: rgb(22, 22, 22);
+    
 
 
 }
@@ -8,8 +9,54 @@ body {
 nav {
     background-color: chartreuse;
     padding: 2rem;
+    display: flex;
+    display: flex;
+    gap: 3rem;
+
 
 }
+
+
+.search {
+  display: block;      /* Faz o container ocupar a largura da linha */
+  width: max-content;  /* Ajusta a largura ao tamanho do input + botão */
+  margin: 0 auto;      /* Mágica da centralização horizontal */
+  position: relative;  /* Mantém o botão preso dentro dele */
+}
+
+.search input{
+  padding: 0.9rem ;
+  padding-right: 10rem ;
+  border: none;
+  border-radius: 2rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+  
+}
+
+.search button {
+  background-color: #3f454b;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  
+  /* Ajuste de altura e posição */
+  height: 100%;       /* Faz o botão ter a mesma altura do input */
+  padding: 0 1.5rem;    /* Remove o padding vertical, deixa só nas laterais */
+  position: absolute;
+  top: 0;
+  right: 0;
+  
+  border-radius: 2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: .5s;
+}
+
+.search button:hover {
+  transform: scale(1.1);
+  color: rgb(255, 255, 255);
+  background-color: rgb(93, 93, 107);
+}
+
 
 .sidebar  {
   
@@ -28,4 +75,17 @@ nav {
 
 .sidebar:hover  {
     width: 22vh;              
+}
+
+.icon {
+    width: 2rem;                /* Largura do ícone */
+    height: 2rem;               /* Altura do ícone */
+    
+}
+
+
+.iconYTB {
+    width: 3rem;                /* Largura do ícone */
+    height: 3rem;               /* Altura do ícone */
+    
 }
