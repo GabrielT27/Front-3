@@ -32,7 +32,6 @@ function App() {
         <Saudacao />
         <Saudacao />
         <Saudacao />
-        <Saudacao/>
 
         <Alarme/>
 
