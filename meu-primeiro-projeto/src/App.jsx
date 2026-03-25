@@ -33,6 +33,10 @@ function App() {
         <Saudacao />
         <Saudacao />
         <Saudacao/>
+
+        <Alarme/>
+
+        <Intervalo horario = "10:40" funcao = "Comer"/>
         
         <p>Note que eu posso repetir o componente quantas vezes eu quiser!</p>
       </div>
@@ -41,3 +45,33 @@ function App() {
 }
 
 export default App
+
+
+function Intervalo({horario, funcao}) {
+
+
+  return (
+    <div style={{backgroundColor: '#f474', padding:'5px', borderRadius: '8px', marginBottom:'10px'}}>
+      <h1 style={{color: '#fff447'}}>Intervalo</h1>
+      <h2 style={{color: '#0d39c9'}}>Horário: {horario}</h2>
+      <h2 style={{color: '#0d39c9'}}>Função: {funcao}</h2>
+      
+      <p>Estou Criando Meu First Component</p>
+     
+    </div>
+  )
+}
+
+function Alarme() {
+
+
+  return(
+    <div style={{backgroundColor: 'rgb(0, 255, 85)', padding: '5px', borderRadius: '8px', marginBottom: '10px',}}>
+      <h1 style={{color: '#ff0000'}}>Alarme</h1>
+      <p>EVACUE</p>
+    </div>
+  )
+}
+
+
+
